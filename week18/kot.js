@@ -1,10 +1,10 @@
 
-let form = document.querySelector('form');
+// let form = document.querySelector('form');
 
-form.addEventListener('submit',(evt) =>{
-    evt.preventDefault();
-    let Allstr = new FormData(form);
-    console.log(Allstr);
+// form.addEventListener('submit',(evt) =>{
+//     evt.preventDefault();
+//     let Allstr = new FormData(form);
+//     console.log(Allstr);
 
-});
+// });
 
