@@ -1,6 +1,8 @@
 let comments = [];
 
 
+
+
 loadComments();
 
 let button = document.querySelector("button").onclick = function(){
@@ -13,10 +15,14 @@ let button = document.querySelector("button").onclick = function(){
     }   
     inputName.value = ' ';
     textareaComments.value = ' ';
+
+
+
+   
     comments.push(comment);
     showComments();
     showComments(); 
-    checkspam(); 
+    // checkspam(); 
 }
 
 function showComments(){
@@ -27,13 +33,18 @@ function loadComments() {
     showComments();
 }
 
-function checkspam(){
-    if(comments.value.uncludes("xxx")||
-    comments.value.uncludes("viagra")
-    ){
-        comments.replace("***");
-    }
-}
+
+
+
+
+// function checkspam(){
+//     if(comments.value.includes("xxx") ||
+//     comments.value.includes("viagra")
+//     ){
+//         console.log(jr)
+//         comments.replaceAll("***");
+//     }
+// }
 
 function showComments() {
     let resultNode = document.querySelector(".result");
@@ -45,7 +56,7 @@ function showComments() {
     });
 
 
-resultNode.innerHTML = out;
+resultNode.innerHTML = out.replaceAll("viagra",'***');
 
 }
 
