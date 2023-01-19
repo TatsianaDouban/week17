@@ -16,9 +16,6 @@ let button = document.querySelector("button").onclick = function(){
     inputName.value = ' ';
     textareaComments.value = ' ';
 
-
-
-   
     comments.push(comment);
     showComments();
     showComments(); 
@@ -33,18 +30,6 @@ function loadComments() {
     showComments();
 }
 
-
-
-
-
-// function checkspam(){
-//     if(comments.value.includes("xxx") ||
-//     comments.value.includes("viagra")
-//     ){
-//         console.log(jr)
-//         comments.replaceAll("***");
-//     }
-// }
 
 function showComments() {
     let resultNode = document.querySelector(".result");
