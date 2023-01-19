@@ -80,10 +80,3 @@ resultNode.innerHTML = out.replaceAll("viagra",'***').replaceAll('xxx','***');
 
 
 
-
-
-
-
-
-
-
