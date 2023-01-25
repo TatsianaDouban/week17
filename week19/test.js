@@ -10,7 +10,7 @@ class Person {
     }
 
 getsalary() {  
-    console.log(`Сотрудник: ${this.firstname}  ${this.lastname} Получит зп:  ${this.days * this.rate} $`);
+    resutl.innerHTML = (`Сотрудник: ${this.firstname}  ${this.lastname} Получит зп:  ${this.days * this.rate} $`);
  }
 }
 
@@ -20,5 +20,6 @@ form.addEventListener("submit",(evt) =>{
 
    let person = new Person(Allstr);
    person.getsalary();
+
 });
 
