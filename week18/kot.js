@@ -11,7 +11,7 @@ class Cat {
    print(){
        console.log(this)
    }
-}
+} 
 
 form.addEventListener("submit",(evt) =>{
    evt.preventDefault();

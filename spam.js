@@ -1,17 +1,21 @@
 let comments = [];
 
+
+
 loadComments();
 
 let button = document.querySelector("button").onclick = function(){
     let inputName = document.querySelector(".nameinput");
     let textareaComments = document.querySelector(".comment");
     let inputavatar = document.querySelector(".avatar")
+
+    localStorage.setItem("inputName",name);
  
 
     let comment = {
         name : inputName.value,
         body : textareaComments.value,
-        avatar : inputavatar.value,
+        avatar : inputavatar.jpg,
     }   
     inputName.value = ' ';
     textareaComments.value = ' ';
@@ -29,7 +33,6 @@ function saveComments(){
 
 function loadComments() {
     if(localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
-    showComments();
 }
 
 
